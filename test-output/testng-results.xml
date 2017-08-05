@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21592" started-at="2017-08-05T18:33:11Z" finished-at="2017-08-05T18:33:33Z">
+  <suite name="Default suite" duration-ms="25723" started-at="2017-08-05T21:41:22Z" finished-at="2017-08-05T21:41:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21592" started-at="2017-08-05T18:33:11Z" finished-at="2017-08-05T18:33:33Z">
+    <test name="Default test" duration-ms="25723" started-at="2017-08-05T21:41:22Z" finished-at="2017-08-05T21:41:48Z">
       <class name="selenium.test.SimpleWorkflow">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:selenium.test.SimpleWorkflow@8bd1b6a]" name="beforeTest" is-config="true" duration-ms="4167" started-at="2017-08-06T00:03:11Z" finished-at="2017-08-06T00:03:16Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:selenium.test.SimpleWorkflow@8bd1b6a]" name="beforeTest" is-config="true" duration-ms="4772" started-at="2017-08-06T03:11:22Z" finished-at="2017-08-06T03:11:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="openURL()[pri:0, instance:selenium.test.SimpleWorkflow@8bd1b6a]" name="openURL" duration-ms="16348" started-at="2017-08-06T00:03:16Z" finished-at="2017-08-06T00:03:32Z">
+        <test-method status="PASS" signature="openURL()[pri:0, instance:selenium.test.SimpleWorkflow@8bd1b6a]" name="openURL" duration-ms="19866" started-at="2017-08-06T03:11:27Z" finished-at="2017-08-06T03:11:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openURL -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:selenium.test.SimpleWorkflow@8bd1b6a]" name="afterTest" is-config="true" duration-ms="1061" started-at="2017-08-06T00:03:32Z" finished-at="2017-08-06T00:03:33Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:selenium.test.SimpleWorkflow@8bd1b6a]" name="afterTest" is-config="true" duration-ms="1073" started-at="2017-08-06T03:11:47Z" finished-at="2017-08-06T03:11:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

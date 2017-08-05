@@ -4,26 +4,26 @@ import org.testng.annotations.BeforeTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
-
 import java.util.concurrent.TimeUnit;
-
 import org.apache.commons.lang3.time.StopWatch;
+import org.apache.log4j.Logger;
 
 public class SimpleWorkflow {
   WebDriver webdriver;
   StopWatch sw;
+  Logger log;
   
   @Test
   public void openURL() {
 	  
+	  log.debug("Started Test");
 	  webdriver.get("https://www.google.com");
 	  
 	  webdriver.findElement(By.xpath("//*[@id='tsf']/div[2]/div[3]/center/input[1]"));
-	  
+	  log.debug("Browsed to google URL");
 
 	  webdriver.findElement(By.xpath(".//input[@value=\"I'm Feeling Lucky\"]")).click();
 	  try {
@@ -37,6 +37,7 @@ public class SimpleWorkflow {
 	  sw.start();
 	  //Start Logger
 	  wt.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='latest']/div/div[1]")));
+	  log.debug("Found Text after clicking on lucky content");
 	  //webdriver.findElement(By.xpath("//*[@id='latest']/div/div[1]"));
 	  sw.stop();
 	  System.out.println(sw.toString());
@@ -46,6 +47,9 @@ public class SimpleWorkflow {
   @BeforeTest()
   public void beforeTest() {
 	    //Instantiate Stopwatch
+	    log = Logger.getLogger("EnergyLogs");
+	    
+	    log.debug("Started Before Test method");
 	    sw = new StopWatch();
 	    //Set System property to drivers physical path. Note: Different for different drivers.
 		System.setProperty("webdriver.chrome.driver","c:/resources/chromedriver.exe"); 	//System.getProperty("user.dir").replace("\\", "/") + "/resources/chromedriver.exe");
@@ -60,9 +64,11 @@ public class SimpleWorkflow {
 
   @AfterTest
   public void afterTest() {
+	  log.debug("Stopping the test - After Test");
 	  //Quit Webdriver
 	  webdriver.quit();
 	  sw = null;
+	  
   }
 
 }
