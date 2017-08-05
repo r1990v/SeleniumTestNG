@@ -50,6 +50,7 @@ public class SimpleWorkflow {
 	    //Set System property to drivers physical path. Note: Different for different drivers.
 		System.setProperty("webdriver.chrome.driver","c:/resources/chromedriver.exe"); 	//System.getProperty("user.dir").replace("\\", "/") + "/resources/chromedriver.exe");
 		//Instantiate webdriver with chrome driver, here we can implement multiple browser concept
+		System.setProperty("org.apache.commons.logging.Log", "org.apache.commons.logging.impl.Jdk14Logger");
 		webdriver = new ChromeDriver();
 		//Maximize driver window.
 		webdriver.manage().window().maximize();
