@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Main Suite"><!-- parallel="tests">  -->
+  <test verbose="1" name="TestOnChrome">
+    <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="selenium.test.SimpleWorkflow"/>
+    </classes>
+  </test>
+  <!-- <test verbose="1" name="TestIE">
+    <parameter name="browser" value="IE"></parameter>
+    <classes>
+      <class name="selenium.test.SimpleWorkflow"/>
+    </classes>
+  </test>
+   -->
+</suite> <!-- Default suite -->

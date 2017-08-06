@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Main Suite]">
+  <parameter name="browser" value="IE"/>
+  <test name="TestOnChrome(failed)">
+    <parameter name="browser" value="IE"/>
+    <classes>
+      <class name="selenium.test.SimpleWorkflow">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="openURL"/>
+        </methods>
+      </class> <!-- selenium.test.SimpleWorkflow -->
+    </classes>
+  </test> <!-- TestOnChrome(failed) -->
+</suite> <!-- Failed suite [Main Suite] -->
