@@ -7,6 +7,12 @@
       <class name="selenium.test.SimpleWorkflow"/>
     </classes>
   </test>
+  <test verbose="2" name="TestOnChrome2">
+    <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="selenium.test.SimpleWorkflow"/>
+    </classes>
+  </test>
   <!-- <test verbose="1" name="TestIE">
     <parameter name="browser" value="IE"></parameter>
     <classes>

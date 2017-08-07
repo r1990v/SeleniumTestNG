@@ -32,7 +32,7 @@ public class SimpleWorkflow {
 	  
 	  webdriver.findElement(By.xpath("//*[@id='tsf']/div[2]/div[3]/center/input[1]"));
 	  log.debug("Browsed to google URL");
-
+	  
 	  webdriver.findElement(By.xpath(".//input[@value=\"I'm Feeling Lucky\"]")).click();
 	  try {
 		Thread.sleep(2000);
@@ -98,10 +98,12 @@ public class SimpleWorkflow {
 	    	webdriver = new InternetExplorerDriver();
 	    }
 	    
+	    webdriver.manage().deleteAllCookies();
+	    
 		//Maximize driver window.
 		webdriver.manage().window().maximize();
 		//Set minimum timeout settings. Set according to your applications performance requirements
-		webdriver.manage().timeouts().setScriptTimeout(50, TimeUnit.SECONDS);
+		webdriver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
   }
 
   @AfterTest

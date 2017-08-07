@@ -53,7 +53,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Main_Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -99,6 +99,11 @@
                       <a href="#" panel-name="suite-Main_Suite" class="show-methods passed suite-Main_Suite"> (show)</a> <!-- show-methods passed suite-Main_Suite -->
                     </span>
                     <div class="method-list-content passed suite-Main_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Main_Suite" title="selenium.test.SimpleWorkflow" hash-for-method="openURL">openURL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Main_Suite" title="selenium.test.SimpleWorkflow" hash-for-method="openURL">openURL</a> <!-- method navigator-link -->
@@ -129,6 +134,13 @@
                   <span class="method-name">openURL</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openURL">
+                  </a> <!-- openURL -->
+                  <span class="method-name">openURL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Main_Suite-class-passed -->
         </div> <!-- panel Main_Suite -->
@@ -147,6 +159,12 @@
       &lt;class name=&quot;selenium.test.SimpleWorkflow&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TestOnChrome --&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;TestOnChrome2&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;selenium.test.SimpleWorkflow&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestOnChrome2 --&gt;
 &lt;/suite&gt; &lt;!-- Main Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -159,6 +177,9 @@
             <ul>
               <li>
                 <span class="test-name">TestOnChrome (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">TestOnChrome2 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -184,16 +205,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'openURL')
 data.setCell(0, 2, 'selenium.test.SimpleWorkflow')
-data.setCell(0, 3, 10549);
+data.setCell(0, 3, 19362);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'openURL')
+data.setCell(1, 2, 'selenium.test.SimpleWorkflow')
+data.setCell(1, 3, 15007);
 window.suiteTableData['Main_Suite']= { tableData: data, tableDiv: 'times-div-Main_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 34 seconds</span>
               <div id="times-div-Main_Suite">
               </div> <!-- times-div-Main_Suite -->
             </div> <!-- times-div -->
@@ -226,11 +251,23 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">openURL</span>
-                <span class="method-start">4354 ms</span>
+                <span class="method-start">4261 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">14906 ms</span>
+                <span class="method-start">19270 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest(chrome)</span>
+                <span class="method-start">20346 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">openURL</span>
+                <span class="method-start">23626 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">42988 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
