@@ -67,10 +67,10 @@ public class BaseClass {
 		  
 	  }
 	  
-	  public void takeScreenShot() throws Exception{
+	  public static void takeScreenShot(String fileName, WebDriver webdriver) throws Exception{
 		  TakesScreenshot ts = (TakesScreenshot)webdriver;
 		  File src = ts.getScreenshotAs(OutputType.FILE);
-		  FileUtils.copyFile(src, new File("./Screenshots/test.png"));
+		  FileUtils.copyFile(src, new File("./Screenshots/"+fileName+".png"));
 		  System.out.println("ScreenShot Captured");
 	  }
 
