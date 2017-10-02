@@ -1,10 +1,13 @@
 package selenium.test;
 
+import java.io.File;
 import java.util.concurrent.TimeUnit;
-
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.time.StopWatch;
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -62,6 +65,13 @@ public class BaseClass {
 		  webdriver.quit();
 		  sw = null;
 		  
+	  }
+	  
+	  public void takeScreenShot() throws Exception{
+		  TakesScreenshot ts = (TakesScreenshot)webdriver;
+		  File src = ts.getScreenshotAs(OutputType.FILE);
+		  FileUtils.copyFile(src, new File("./Screenshots/test.png"));
+		  System.out.println("ScreenShot Captured");
 	  }
 
 }

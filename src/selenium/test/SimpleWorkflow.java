@@ -1,33 +1,14 @@
 package selenium.test;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Parameters;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterTest;
-
-import java.util.NoSuchElementException;
-import java.util.concurrent.TimeUnit;
-import java.util.function.Function;
-
-import org.apache.commons.lang3.time.StopWatch;
-import org.apache.log4j.BasicConfigurator;
-import org.apache.log4j.Logger;
 
 public class SimpleWorkflow extends BaseClass{
   
   @Test(priority=1)
-  public void openURL() {
+  public void openURL() throws Exception {
 	  
 	  //throw new SkipException("Skipped the workflow");
 	  
@@ -38,6 +19,7 @@ public class SimpleWorkflow extends BaseClass{
 	  log.debug("Browsed to google URL");
 	  
 	  webdriver.findElement(By.xpath(".//input[@value=\"I'm Feeling Lucky\"]")).click();
+	  takeScreenShot();
 	  try {
 		Thread.sleep(2000);
 	} catch (InterruptedException e) {
