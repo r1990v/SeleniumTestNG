@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Main Suite" duration-ms="43893" started-at="2017-08-06T17:44:32Z" finished-at="2017-08-06T17:45:16Z">
+  <suite name="Main Suite" duration-ms="19499" started-at="2017-10-02T16:53:05Z" finished-at="2017-10-02T16:53:24Z">
     <groups>
     </groups>
-    <test name="TestOnChrome" duration-ms="20326" started-at="2017-08-06T17:44:32Z" finished-at="2017-08-06T17:44:53Z">
+    <test name="TestOnChrome" duration-ms="19499" started-at="2017-10-02T16:53:05Z" finished-at="2017-10-02T16:53:24Z">
       <class name="selenium.test.SimpleWorkflow">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:selenium.test.SimpleWorkflow@d8355a8]" name="beforeTest" is-config="true" duration-ms="4255" started-at="2017-08-06T23:14:32Z" finished-at="2017-08-06T23:14:37Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:selenium.test.SimpleWorkflow@6d4b1c02]" name="beforeTest" is-config="true" duration-ms="7602" started-at="2017-10-02T22:23:05Z" finished-at="2017-10-02T22:23:12Z">
           <params>
             <param index="0">
               <value>
@@ -18,38 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="openURL()[pri:0, instance:selenium.test.SimpleWorkflow@d8355a8]" name="openURL" duration-ms="15007" started-at="2017-08-06T23:14:37Z" finished-at="2017-08-06T23:14:52Z">
+        <test-method status="PASS" signature="openURL()[pri:0, instance:selenium.test.SimpleWorkflow@6d4b1c02]" name="openURL" duration-ms="9677" started-at="2017-10-02T22:23:12Z" finished-at="2017-10-02T22:23:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openURL -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:selenium.test.SimpleWorkflow@d8355a8]" name="afterTest" is-config="true" duration-ms="1051" started-at="2017-08-06T23:14:52Z" finished-at="2017-08-06T23:14:53Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:selenium.test.SimpleWorkflow@6d4b1c02]" name="afterTest" is-config="true" duration-ms="2204" started-at="2017-10-02T22:23:22Z" finished-at="2017-10-02T22:23:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- selenium.test.SimpleWorkflow -->
     </test> <!-- TestOnChrome -->
-    <test name="TestOnChrome2" duration-ms="23543" started-at="2017-08-06T17:44:53Z" finished-at="2017-08-06T17:45:16Z">
-      <class name="selenium.test.SimpleWorkflow">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:selenium.test.SimpleWorkflow@53b32d7]" name="beforeTest" is-config="true" duration-ms="3279" started-at="2017-08-06T23:14:53Z" finished-at="2017-08-06T23:14:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="openURL()[pri:0, instance:selenium.test.SimpleWorkflow@53b32d7]" name="openURL" duration-ms="19362" started-at="2017-08-06T23:14:56Z" finished-at="2017-08-06T23:15:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openURL -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:selenium.test.SimpleWorkflow@53b32d7]" name="afterTest" is-config="true" duration-ms="900" started-at="2017-08-06T23:15:15Z" finished-at="2017-08-06T23:15:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- selenium.test.SimpleWorkflow -->
-    </test> <!-- TestOnChrome2 -->
   </suite> <!-- Main Suite -->
 </testng-results>
