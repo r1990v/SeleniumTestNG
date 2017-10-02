@@ -17,9 +17,9 @@ public class SimpleWorkflow extends BaseClass{
 	  
 	  webdriver.findElement(By.xpath("//*[@id='tsf']/div[2]/div[3]/center/input[1]"));
 	  log.debug("Browsed to google URL");
-	  takeScreenShot("GoogleHomePage", webdriver);
+	  //takeScreenShot("GoogleHomePage", webdriver);
 	  webdriver.findElement(By.xpath(".//input[@value=\"I'm Feeling Lucky\"]")).click();
-	  takeScreenShot("IamFeelingLucky", webdriver);
+	  //takeScreenShot("IamFeelingLucky", webdriver);
 	  try {
 		Thread.sleep(2000);
 	} catch (InterruptedException e) {
